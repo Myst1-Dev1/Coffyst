@@ -1,10 +1,14 @@
 
 const menu = document.getElementById("menu-bar");
 const navbar = document.querySelector(".navbar");
+const close = document.getElementById("close-bar");
 
 menu.addEventListener('click', () => {
-    navbar.classList.toggle('active');
-    menu.classList.toggle('fa-times');
+    navbar.classList.add('active');
+})
+
+close.addEventListener('click', () => {
+    navbar.classList.remove('active');
 })
 
 
